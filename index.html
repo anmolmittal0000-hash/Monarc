@@ -7,81 +7,101 @@
 
 <style>
 body{
-    margin:0;
-    font-family:Arial,Helvetica,sans-serif;
-    background:#0d0d0d;
-    color:#fff;
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#0d0d0d;
+  color:#fff;
 }
 header{
-    text-align:center;
-    padding:40px 20px;
-    background:#000;
+  text-align:center;
+  padding:40px 20px;
+  background:#000;
 }
 header h1{
-    letter-spacing:5px;
-    margin:0;
+  letter-spacing:5px;
+  margin:0;
 }
-header p{
-    color:#aaa;
-}
+header p{color:#aaa}
+
 section{
-    max-width:1200px;
-    margin:auto;
-    padding:40px 20px;
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px;
 }
 .products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
 }
 .card{
-    background:#161616;
-    border-radius:10px;
-    overflow:hidden;
+  background:#161616;
+  border-radius:10px;
+  overflow:hidden;
 }
 .card img{
-    width:100%;
-    height:260px;
-    object-fit:cover;
+  width:100%;
+  height:260px;
+  object-fit:cover;
 }
 .card-content{
-    padding:15px;
-    text-align:center;
+  padding:15px;
+  text-align:center;
 }
-.card-content h3{
-    margin:8px 0;
+.price{
+  font-weight:bold;
+  margin:6px 0;
+}
+.size{
+  font-size:13px;
+  color:#ccc;
 }
 .buy-btn{
-    display:inline-block;
-    margin-top:10px;
-    padding:10px 20px;
-    background:#25D366;
-    color:#000;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 22px;
+  background:#25D366;
+  color:#000;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
 }
+
+/* Floating WhatsApp */
+.whatsapp-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#000;
+  padding:14px 18px;
+  border-radius:50px;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:0 4px 10px rgba(0,0,0,0.4);
+}
+
 .instagram{
-    text-align:center;
-    margin-top:30px;
+  text-align:center;
+  margin-top:30px;
 }
 .instagram a{
-    padding:12px 30px;
-    border:1px solid #fff;
-    color:#fff;
-    border-radius:30px;
-    text-decoration:none;
+  padding:12px 30px;
+  border:1px solid #fff;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
 }
+
 .contact{
-    background:#000;
-    text-align:center;
-    padding:40px 20px;
+  background:#000;
+  text-align:center;
+  padding:40px 20px;
 }
 footer{
-    text-align:center;
-    padding:15px;
-    font-size:13px;
-    color:#aaa;
+  text-align:center;
+  padding:15px;
+  font-size:13px;
+  color:#aaa;
 }
 </style>
 </head>
@@ -89,8 +109,8 @@ footer{
 <body>
 
 <header>
-    <h1>MONARC</h1>
-    <p>Premium Clothing • High Standards • Luxury Wear</p>
+  <h1>MONARC</h1>
+  <p>Premium Clothing • High Standards • Luxury Wear</p>
 </header>
 
 <section>
@@ -102,7 +122,9 @@ footer{
 <img src="https://via.placeholder.com/400x500?text=MONARC+Hoodie">
 <div class="card-content">
 <h3>Premium Hoodie</h3>
-<p>Soft fabric • Modern fit</p>
+<p class="price">₹1999</p>
+<p class="size">Sizes: S • M • L • XL</p>
+<p>No COD • Limited Stock</p>
 <a class="buy-btn" href="https://wa.me/918607945134?text=I%20want%20to%20order%20MONARC%20Hoodie">Buy on WhatsApp</a>
 </div>
 </div>
@@ -111,7 +133,9 @@ footer{
 <img src="https://via.placeholder.com/400x500?text=MONARC+T-Shirt">
 <div class="card-content">
 <h3>Classic T-Shirt</h3>
-<p>Minimal & stylish</p>
+<p class="price">₹899</p>
+<p class="size">Sizes: S • M • L • XL</p>
+<p>No COD</p>
 <a class="buy-btn" href="https://wa.me/918607945134?text=I%20want%20to%20order%20MONARC%20T-Shirt">Buy on WhatsApp</a>
 </div>
 </div>
@@ -119,8 +143,10 @@ footer{
 <div class="card">
 <img src="https://via.placeholder.com/400x500?text=MONARC+Shirt">
 <div class="card-content">
-<h3>Formal Shirt</h3>
-<p>Clean & premium look</p>
+<h3>Premium Shirt</h3>
+<p class="price">₹1499</p>
+<p class="size">Sizes: M • L • XL</p>
+<p>Premium Fabric</p>
 <a class="buy-btn" href="https://wa.me/918607945134?text=I%20want%20to%20order%20MONARC%20Shirt">Buy on WhatsApp</a>
 </div>
 </div>
@@ -129,7 +155,9 @@ footer{
 <img src="https://via.placeholder.com/400x500?text=MONARC+Trousers">
 <div class="card-content">
 <h3>Luxury Trousers</h3>
-<p>Comfort meets style</p>
+<p class="price">₹1799</p>
+<p class="size">Sizes: 30 • 32 • 34 • 36</p>
+<p>Comfort Fit</p>
 <a class="buy-btn" href="https://wa.me/918607945134?text=I%20want%20to%20order%20MONARC%20Trousers">Buy on WhatsApp</a>
 </div>
 </div>
@@ -148,12 +176,16 @@ Follow @monarc_fashion_
 <h2>Contact MONARC</h2>
 <p>📞 8607945134</p>
 <p>📧 monarcfashion0000@gmail.com</p>
-<p>DM or WhatsApp to place your order</p>
+<p>DM or WhatsApp to place orders</p>
 </section>
 
 <footer>
 © 2026 MONARC • All Rights Reserved
 </footer>
+
+<a class="whatsapp-float" href="https://wa.me/918607945134" target="_blank">
+Chat on WhatsApp
+</a>
 
 </body>
 </html>
